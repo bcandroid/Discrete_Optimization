@@ -1,0 +1,39 @@
+
+
+Programming environment (operating system, programming language, IDE, ...):
+I used Python language and jupyter notebook environment.
+
+
+
+Description of approach used (max 200 words):
+My algortihm is holistic approach to address the Capacitated Vehicle Routing Problem by combining heuristic methods, 
+local search refinement and the exploration capabilities of the Branch and Bound algorithm. I used Local search for improving result of B and B.
+It is implemented using  heapq. The results are showcased through the optimization of a sample VRP instances.
+It begins with the generation of an initial solution using a heuristic based on the Value-to-Weight ratio. This heuristic helps prioritize customers with a higher value-to-weight ratio,
+allowing for efficient allocation of goods to the vehicles.B and B algorithm incorporates a systematic approach to branch out into different potential solutions, utilizing pruning techniques
+to eliminate suboptimal routes early in the process. 
+It include the concept of linear relaxation, allowing for fractional solutions to be considered, providing additional flexibility.
+improve the B and B solution, a local search algorithm is employed. The algorithm iteratively explores small modifications to the routes, evaluating the impact on the overall distance traveled. 
+This best modifications are incorporated into the solution, leading to a refined and optimized routing plan.
+
+
+ 
+
+
+All relevant parameters and their settings:
+I used input as TXT file.(I put it in homework folder , it is named as vrp_input.txt).The highest execution time is 1.5 minutes
+Nothing else needs to be set before running code
+
+
+
+Extra Notes (max 100 words):
+I tried  tabu search,simuleting anneling  to get better results,but they dint have more better solution.
+Some output are shown in output_representation folder
+
+
+
+References:
+[1] https://coral.ise.lehigh.edu/~ted/files/computational-mip/lectures/Lecture8.pdf 
+[2] https://www.tandfonline.com/doi/full/10.1057/palgrave.jors.2601612
+[3] https://medium.com/opex-analytics/opex-101-vehicle-routing-problems-262a173f4214
+[4] https://www.researchgate.net/publication/242932318_A_Branch-and-Bound_Algorithm_for_the_Capacitated_Vehicle_Routing_Problem_on_Directed_Graphs

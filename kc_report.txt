@@ -1,0 +1,36 @@
+
+
+Programming environment (operating system, programming language, IDE, ...):
+I used Python language and jupyter notebook environment.
+
+
+
+Description of approach used (max 200 words):
+I used branch and bound algorithm to solve Knapsack problem.
+I used the priority queue structure in my algorithm. The search will be made from the right and left children. 
+And the values in the queue are represented by the node structure. The nodes have properties such as level, weight, value and mother node (represented by include. 
+The one connected by the mother node is represented). Level value. The levels of the nodes in the search tree are kept. In this way, the search is made recursively.
+Bound part help prunning to save time.
+I used same strategies like:
+"sorting by value-to-weight ratio in descending order",If the bound of "both children is less than or equal to the current best_node value, 
+increment count and if count=500,quit searching", 
+"Pruning: remove nodes with a lower bound than the current best_node value" 
+
+
+
+
+All relevant parameters and their settings:
+I used input as TXT file.(I put it in homework folder , it is named as knapsack_input.txt).
+Nothing else needs to be set before running code
+
+
+
+Extra Notes (max 100 words):
+I tried tabu search and local search to get better results, but the results did not improve.
+And Output_represantation folder is my output in my computer
+
+
+References:
+[1] https://coral.ise.lehigh.edu/~ted/files/computational-mip/lectures/Lecture8.pdf 
+[2] https://sofdem.github.io/teach/oro/m2oro-ilp-demassey-notes-lec7-8.pdf
+[3] https://www.geeksforgeeks.org/0-1-knapsack-using-branch-and-bound/

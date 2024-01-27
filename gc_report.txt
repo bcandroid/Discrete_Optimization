@@ -1,0 +1,34 @@
+
+
+Programming environment (operating system, programming language, IDE, ...):
+I used Python language and jupyter notebook environment.
+
+
+
+Description of approach used (max 200 words):
+The algorithm reads a graph from an 'input.txt' file, applies the initial coloring using DFS with the degree heuristic, and then refines the coloring through local search optimization.
+The first step in algorithm involves ordering the nodes based on their degrees in descending order. The degree of a node is the number of edges connected to it. 
+Sorting nodes in this manner allows us to start the coloring process with nodes having higher degrees, potentially reducing conflicts.The core of the graph coloring algorithm is a depth-first search (DFS) 
+based coloring approach. The algorithm iteratively explores possible colorings, backtracking when conflicts arise. This process continues until a valid coloring is found.
+To further improve the obtained coloring, a local search optimization is applied. This involves randomly swapping colors between two nodes and accepting the swap only if it reduces conflicts.
+This iterative process aims to refine the coloring and reduce the overall chromatic number.
+
+
+All relevant parameters and their settings:
+I used input as TXT file.(I put it in homework folder , it is named as input.txt).
+Nothing else needs to be set before running code
+
+
+
+Extra Notes (max 100 words):
+Randomly swap colors between two nodes in local search.I tried branch and bound , tabu search,simuleting anneling  to get better results,they are not suitable .And linear relaxation is not suitable for this problem 
+because execution time is so much to observe.
+And Output_represantation folder is my some of output in my computer.And the highest execution time are close to 10 minutes(after 250 samples.Others execute so fast)
+
+
+
+References:
+[1] https://github.com/FatemehGholamzadeh/Local-Search-Algorithms-for-Graph-Coloring/tree/main/src
+[2] https://www.geeksforgeeks.org/search-algorithms-in-ai/
+[3] https://www.geeksforgeeks.org/graph-coloring-set-2-greedy-algorithm/
+[4] https://arxiv.org/abs/1703.05129
