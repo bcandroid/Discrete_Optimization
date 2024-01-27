@@ -1,0 +1,1 @@
+Solving knapsack, graph coloring and VRP with optimization techs. Used Branch and bound,local and tabu search for knapsack. Used Branch and bound, local search, tabu search, DFS for graph coloring.Used Branch and bound , local and tabu search for VRP
